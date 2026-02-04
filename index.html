@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine? 💝</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating hearts -->
+    <div class="heart" style="left: 10%; animation-delay: 0s;">❤️</div>
+    <div class="heart" style="left: 20%; animation-delay: 1s;">💕</div>
+    <div class="heart" style="left: 30%; animation-delay: 2s;">💖</div>
+    <div class="heart" style="left: 40%; animation-delay: 3s;">💗</div>
+    <div class="heart" style="left: 50%; animation-delay: 4s;">💝</div>
+    <div class="heart" style="left: 60%; animation-delay: 5s;">💘</div>
+    <div class="heart" style="left: 70%; animation-delay: 1.5s;">❤️</div>
+    <div class="heart" style="left: 80%; animation-delay: 2.5s;">💕</div>
+    <div class="heart" style="left: 90%; animation-delay: 3.5s;">💖</div>
+
+    <div class="container">
+        <div id="question-section">
+            <div class="emoji">😍</div>
+            <h1>Hey Kamuuu!</h1>
+            <p class="question">Will You Kamu Be My Valentine?</p>
+            <div class="buttons">
+                <button class="yes-btn" onclick="sayYes()">Iyaaa 💖</button>
+                <button class="no-btn" id="noBtn" onclick="changeNo()">Egxxx Mw</button>
+            </div>
+        </div>
+
+        <div class="success-message" id="successMessage">
+            <div class="emoji">🎉</div>
+            <h1>Yaaaay🥳</h1>
+            <p>Mwaa</p>
+            <p style="font-size: 18px; margin-top: 30px;">Happy Valentine's Day! 💝</p>
+            <button class="continue-btn" onclick="showGallery()">Continue 💕</button>
+        </div>
+
+        <div class="photo-gallery" id="photoGallery">
+            <div class="emoji">📸</div>
+            <h1>Bukankah Ini My💕</h1>
+            <p style="font-size: 18px; color: #666; margin-bottom: 20px;">Your beautiful, Imup, Gorgeous, Cantik❤️</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-grid">
+                    <div class="photo-box">
+                        <img src="photo1.jpeg" alt="Memory 1">
+                    </div>
+                    <div class="photo-box">
+                        <img src="photo2.jpeg" alt="Memory 2">
+                    </div>
+                    <div class="photo-box">
+                        <img src="photo3.jpeg" alt="Memory 3">
+                    </div>
+                    <div class="photo-box">
+                        <img src="photo4.jpeg" alt="Memory 4">
+                    </div>
+                    <div class="photo-box">
+                        <img src="photo5.jpeg" alt="Memory 5">
+                    </div>
+                    <div class="photo-box">
+                        <img src="photo6.jpeg" alt="Memory 6">
+                    </div>
+                </div>
+            </div>
+
+            <button class="back-btn" onclick="backToSuccess()">← Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
